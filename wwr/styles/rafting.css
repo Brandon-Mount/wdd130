@@ -1,0 +1,44 @@
+/* Styling for the hero section */
+.hero {
+    position: relative; /* Allows absolute positioning of inner elements */
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%; /* Relative width to fill the container */
+    height: auto; /* Maintains the aspect ratio */
+  }
+  
+  /* Absolute positioning for the h1 */
+  .hero h1 {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    font-size: 3em; /* Adjust font size for the heading */
+    color: white; /* Adjust text color to contrast with the image */
+    z-index: 10; /* Ensures it is layered on top of other elements */
+  }
+  
+  /* Absolute positioning for the article */
+  .hero article {
+    position: absolute;
+    bottom: 20px; /* Adjust positioning as needed */
+    left: 20px; /* Adjust positioning as needed */
+    width: 80%; /* Adjust width as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white; /* Text color */
+    padding: 20px; /* Adds padding inside the article */
+    z-index: 9; /* Ensures it's layered under the h1 */
+  }
+  
+  /* Floats the image to the right inside the article */
+  .hero article img {
+    float: right;
+    width: 30%; /* Adjust the image size as needed */
+    margin-left: 20px; /* Adds space between the image and the text */
+  }
+  
+  /* Clears float for the paragraph in the article */
+  .hero article p {
+    clear: both;
+    line-height: 1.6; /* Adjust line spacing for readability */
