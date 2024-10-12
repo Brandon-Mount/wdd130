@@ -1,3 +1,129 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+/* Logo Image Styling */
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation Bar with Flexbox */
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* History Section Styling */
+section {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Adventure Section Grid Styling */
+section.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+section.adventures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.adventures figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.adventures figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+footer p {
+  margin-right: auto;
+}
+
+footer nav.sociallinks {
+  display: flex;
+  gap: 1rem;
+}
+
+footer nav.sociallinks a {
+  display: inline-block;
+}
+
+footer nav.sociallinks img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+
 /* Styling for the hero section */
 .hero {
     position: relative; /* Allows absolute positioning of inner elements */
