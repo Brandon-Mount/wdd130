@@ -123,6 +123,98 @@ footer nav.sociallinks img {
   object-fit: cover;
 }
 
+/* === ADDITIONS FOR EMPLOYEE PROFILE SECTION === */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.employee {
+  text-align: center;
+}
+
+.employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee h3 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.employee p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* === ADDITIONS FOR CONTACT FORM === */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form .radio-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .radio-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.contact-form .submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #218838;
+}
+
 
 /* Styling for the hero section */
 .hero {

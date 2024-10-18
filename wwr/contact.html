@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/rafting.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>WDD 130 | Contact Us</title>
+        <meta name="author" content="Brandon Mount">
+        <meta
+            name="description"
+            content="This is a contact us page for my rafting website that I am making in class">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/rafting-momentum.jpg" alt="Rafting logo" width="200">
+            <nav>
+                <a href="wwr/index.html">Home</a>
+                <a href="wwr/about.html">About Us</a>
+                <a href="wwr/trips.html">Trips</a>
+                <a href="wwr/contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Us</h1>
+            <section class="contact-info">
+                <h2>Our Company Information</h2>
+                <p><strong>Address:</strong> 123 River Lane, Rapids City, RC 56789</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Secondary Phone:</strong> (555) 987-6543</p>
+                <p><strong>Email:</strong> info@raftingcompany.com</p>
+    
+                <h3>Find Us Here:</h3>
+                <!-- Google Map Embed -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9537353155048!3d-37.81627974202178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1341ef9%3A0x1d708ab3f024f50d!2sRafting%20Company!5e0!3m2!1sen!2sus!4v1614354351116!5m2!1sen!2sus"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+            <section class="employee-profiles">
+                <h1>Meet Our Team</h1>
+                <div class="employee">
+                    <img src="images/employee1.jpg" alt="John Doe" class="profile-pic">
+                    <h3>John Doe</h3>
+                    <p>Lead River Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee2.jpg" alt="Jane Smith" class="profile-pic">
+                    <h3>Jane Smith</h3>
+                    <p>Safety Coordinator</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee3.jpg" alt="Mike Johnson" class="profile-pic">
+                    <h3>Mike Johnson</h3>
+                    <p>Adventure Planner</p>
+                </div>
+            </section>
+
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <!-- User's Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- User's Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Purpose of the Message (Radio Buttons) -->
+                <label>Purpose of Your Message:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="purpose" value="general-inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation-question">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="website-suggestion">
+                        Website Suggestion
+                    </label>
+                </div>
+    
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <!-- Subscribe to Newsletter Checkbox -->
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+    
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+                
+        </main>
+        <footer>
+            <p>©2024, Rafting Momentum, Brandon Mount</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+            </nav>
+            <nav>
+                <a href="https://app.moqups.com/a0covdHRd2uiH707MsA7K9JYRoPR2wEq/edit/page/ad64222d5">Contact us wireframe</a> </nav>
+        </footer>
+    </body>
+</html>
