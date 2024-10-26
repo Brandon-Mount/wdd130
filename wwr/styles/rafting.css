@@ -215,50 +215,242 @@ footer nav.sociallinks img {
   background-color: #218838;
 }
 
-
-/* Styling for the hero section */
+/* Hero Section */
 .hero {
-    position: relative; /* Allows absolute positioning of inner elements */
-  }
-  
-  .hero img {
-    display: block;
-    width: 100%; /* Relative width to fill the container */
-    height: auto; /* Maintains the aspect ratio */
-  }
-  
-  /* Absolute positioning for the h1 */
-  .hero h1 {
-    position: absolute;
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    font-size: 3em; /* Adjust font size for the heading */
-    color: white; /* Adjust text color to contrast with the image */
-    z-index: 10; /* Ensures it is layered on top of other elements */
-  }
-  
-  /* Absolute positioning for the article */
-  .hero article {
-    position: absolute;
-    bottom: 20px; /* Adjust positioning as needed */
-    left: 20px; /* Adjust positioning as needed */
-    width: 80%; /* Adjust width as needed */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-    color: white; /* Text color */
-    padding: 20px; /* Adds padding inside the article */
-    z-index: 9; /* Ensures it's layered under the h1 */
-  }
-  
-  /* Floats the image to the right inside the article */
-  .hero article img {
-    float: right;
-    width: 30%; /* Adjust the image size as needed */
-    margin-left: 20px; /* Adds space between the image and the text */
-  }
-  
-  /* Clears float for the paragraph in the article */
-  .hero article p {
-    clear: both;
-    line-height: 1.6; /* Adjust line spacing for readability */
-  }
-  
+  background-image: url('images/rafting-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Newsletter Sign-Up Styling */
+.newsletter-signup {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form label,
+.signup-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.signup-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #218838;
+}
+
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e9f7ef;
+  margin: 2rem 0;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Offerings Grid */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.offerings-grid .grid-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.offerings-grid img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.offerings-grid h3 {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+.offerings-grid p {
+  padding: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e9f7ef;
+  margin: 2rem 0;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Trip Descriptions Section */
+.trip-descriptions {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.trip-descriptions h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.trip {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+.trip h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.trip p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Trips Table Section */
+.trips-table {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.trips-table th, .trips-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+.trips-table th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.trips-table td {
+  background-color: #f9f9f9;
+}
+
+.trips-table tr:nth-child(even) td {
+  background-color: #e9e9e9;
+}
